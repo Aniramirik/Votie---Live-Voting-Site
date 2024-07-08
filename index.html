@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votie - Live Voting Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Untitled design (9).png">
+</head>
+<body>
+    <div class="container">
+        <h1>Votie - Live Voting Site</h1>
+        <div class="votie-character">
+            <h2>Meet Votie</h2>
+            <div id="votie">
+                <img src="Untitled design (9).png" alt="Votie Character" id="votie-image">
+                <p>Hi! I'm Votie, your friendly voting assistant.</p>
+            </div>
+        </div>
+        <div class="campaign-creation">
+            <h2>Create a Campaign</h2>
+            <form id="campaignForm">
+                <input type="text" id="title" placeholder="Campaign Title" required>
+                <textarea id="description" placeholder="Campaign Description" required></textarea>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" required>
+                <button type="submit">Create Campaign</button>
+            </form>
+        </div>
+        <div class="campaigns">
+            <h2>Active Campaigns</h2>
+            <input type="text" id="searchBar" placeholder="Search Campaigns" oninput="searchCampaigns()">
+            <div id="campaignList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
